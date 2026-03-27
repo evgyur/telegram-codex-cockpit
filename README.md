@@ -23,3 +23,6 @@
 **Один topic = один workstream.**
 
 Если мешать несколько задач в одной ветке, cockpit быстро превращается в шум.
+
+## Upstream reference
+- `references/openclaw-codex-app-server` — pinned submodule to `https://github.com/pwrdrvr/openclaw-codex-app-server.git`
