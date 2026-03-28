@@ -41,6 +41,7 @@ description: "Builds or maintains a Telegram-based Codex cockpit: a dedicated su
 - `Codex Control` держать для bind/status/control
 - Проектную работу вести в профильных topics
 - При правках конфига помнить, что массивы вроде `bindings` могут перезаписываться целиком
+- Media ingress базово должен работать так: voice notes превращаются в transcript для Codex, а inbound files прокидываются в Codex как local server path/context, а не как обязательный Telegram outbound attachment
 
 ## Быстрый сценарий для пользователя
 1. Зайти в `Codex Control`
@@ -55,7 +56,9 @@ description: "Builds or maintains a Telegram-based Codex cockpit: a dedicated su
 3. Отдельный agent привязан к этому чату
 4. `/cas_resume` и `/cas_status` отвечают
 5. Inline-кнопки работают в topics
-6. Онбординг не врёт о реальном UX
+6. Voice notes в bound topics доходят до Codex как transcript
+7. Inbound files в bound topics доходят до Codex как local file path/context
+8. Онбординг не врёт о реальном UX
 
 ## References
 - [Публичный онбординг на русском](references/onboarding-ru.md)
@@ -63,6 +66,7 @@ description: "Builds or maintains a Telegram-based Codex cockpit: a dedicated su
 - [Quick test checklist](references/quick-test-checklist.md)
 - [Manual review checklist](references/manual-review-checklist.md)
 - [Public/private split notes](references/public-private-split.md)
+- [Media ingress contract](references/media-ingress-contract.md)
 
 ## Output contract
 Когда этот скилл используется, вернуть:
