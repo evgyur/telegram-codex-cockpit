@@ -19,6 +19,18 @@
 - alias не должен снова обрастать отдельной логикой и competing docs
 - live/private детали нельзя переносить в public только ради «удобства»
 - если меняется operator contract, нужно синхронно проверить canonical public skill и private overlay
+- если docs расходятся с working prod behavior, править docs, а не ломать working contour под старый текст
+
+## Prod-first note
+Этот refactor не должен менять уже работающий прод-контур только ради красоты структуры.
+
+Правило:
+- working prod behavior — baseline
+- private live overlay — operator truth
+- canonical public skill — sanitised reusable contract
+- public alias — compatibility shim
+
+Иначе говоря: сначала сохранить то, что реально работает, и только потом упрощать схему вокруг него.
 
 ## Why this shape
 Так схема остаётся понятной:
