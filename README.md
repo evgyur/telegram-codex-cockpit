@@ -47,9 +47,10 @@ Public cockpit считается здоровым, если:
 - `chip-codex-tg-public` = compatibility alias для старых упоминаний и ссылок
 - `chip-codex-tg` = private live overlay с `chipcdx`, chat id, runbook и live snapshot
 
-## Plugin submodule
-- `references/openclaw-codex-app-server` — pinned public submodule to `https://github.com/pwrdrvr/openclaw-codex-app-server.git`
-- используется как implementation reference для `/cas_*`, binding и bridge-layer
+## Plugin reference
+- `references/openclaw-codex-app-server` — optional pinned public submodule to `https://github.com/pwrdrvr/openclaw-codex-app-server.git`
+- если submodule checkout'нут, использовать его как implementation reference для `/cas_*`, binding и bridge-layer
+- если submodule не checkout'нут, upstream URL всё равно остаётся канонической public reference
 
 ## Важно
 Этот public repo специально очищен от live/private привязок.
