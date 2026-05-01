@@ -21,10 +21,10 @@
 - есть доступ на config patch / restart
 
 ## Upstream reference
-Оригинальная реализация может быть закреплена в репо как submodule:
+Оригинальная реализация может быть закреплена в репо как optional submodule:
 - `references/openclaw-codex-app-server`
-Оригинальная реализация Codex App Server может быть закреплена как submodule:
-- upstream: `https://github.com/pwrdrvr/openclaw-codex-app-server.git`
+Если submodule не checkout'нут, использовать upstream напрямую:
+- `https://github.com/pwrdrvr/openclaw-codex-app-server.git`
 
 ## Шаги поднятия
 ### 1) Создать Telegram supergroup
